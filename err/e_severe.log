@@ -1,0 +1,9 @@
+<errorentry>
+	<datetime>2008-11-17 18:39:51 (PST)</datetime>
+	<errornum>2</errornum>
+	<errortype>Warning</errortype>
+	<errormsg>require_once(DB.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory</errormsg>
+	<scriptname>/var/www/vhosts/illanti.com/httpdocs/invoice/includes/common.php</scriptname>
+	<scriptlinenum>50</scriptlinenum>
+</errorentry>
+

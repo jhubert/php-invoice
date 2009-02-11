@@ -1,0 +1,33 @@
+input, select, textarea { font-family: Arial, Helvetica, sans-serif; font-size: 10px;}
+
+table, td, tr, th, p, div {
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+a:link,a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1F4862;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #330000;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: left;
+}
+
+h4 {
+	color: #f00;
+	font-size: 12px;
+}

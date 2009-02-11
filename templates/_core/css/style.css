@@ -1,0 +1,245 @@
+body {
+	position: absolute;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+input, select, textarea { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.frame {
+	background-color: #6298BA;
+	padding: 2px;
+	min-height: 350px;
+}
+.frame .inner {
+	border: 1px solid white;
+	padding: 0px;	
+}
+
+table.contentbox {
+	width: 100%;
+}
+
+h4 {
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	background: #999;
+	padding: 3px;
+}
+td.contentbox {
+	padding: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.innertop {
+	padding: 0px;
+	height: 25px;
+}
+
+.innertop td {
+	text-align: center;
+}
+
+.innertop th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 5px;
+	color: #1F4862;
+	text-decoration: none;
+}
+
+.menu th {
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #3C5D72;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.menu th a {
+	color: #FFFFFF;
+}
+
+.menu th a:visited {
+	color: #FFFFFF;
+}
+
+.menu th a:hover {
+	color: #FFAD0F;
+}
+
+.menu td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	text-align: left;
+}
+
+.menu td a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1F4862;
+	text-decoration: none;
+	text-align: left;
+}
+
+.menu td a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFAD0F;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: left;
+}
+
+.content {
+	padding: 0px;
+	width: 100%;
+}
+
+.content .leftvalue {
+	width:150px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.content .req {
+	width:15%;
+	text-align: right;
+	color: #FF0000;	
+}
+
+.content td {
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #1F4862;	
+}
+
+.content th {
+	padding-left: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #3C5D72;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.content th a:link {
+	color: #FFFFFF;
+}
+
+.content th a:visited {
+	color: #FFFFFF;
+}
+
+.content th a:hover {
+	color: #FFAD0F;
+}
+
+.content td a:link,a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1F4862;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+}
+
+.content td a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFAD0F;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: left;
+}
+
+.odd {
+	background-color: #9FC0D5;
+}
+
+.even {
+	background-color: #78A7C4;
+}
+
+.overdue {
+	background-color: #FF0000;
+}
+
+.over {
+	background-color: #FFFFFF;
+}
+
+.over td {
+
+}
+
+.lineitem {
+	border-bottom: 1px #cccccc solid;
+	font-size: 11px;
+}
+
+table, td, tr, th, p, div {
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+a:link,a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #1F4862;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFAD0F;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: left;
+}
+.copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #1F4862;
+	text-decoration: none;
+}
+
+#paidstamp {
+	position: absolute;
+	z-index: 200;
+	top: 50px;
+	left: 200px;
+	background: transparent url(http://dev.jeremyhubert.com/tg/00001/typicalinvoice/images/paid.gif) no-repeat;
+}
+
+#invoice {
+	position: relative;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	display: block;
+}
