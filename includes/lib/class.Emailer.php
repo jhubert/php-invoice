@@ -7,7 +7,7 @@ $invoice = $ISL->FetchInvoiceDetails($invoiceID);
 $client = $ISL->FetchClientDetails($invoice['clientid']);
 $admin = $ISL->FetchAdminDetails($client['parentClientID']);
 
-$e = new Emailer('forms/email_invoice.tpl', 'New Email', 'jon@typicalgeek.com');
+$e = new Emailer('forms/email_invoice.tpl', 'New Email', 'jon@illanti.com');
 $e->set('SYSTEM', $SYSTEM);
 $e->set('invoice', $invoice);
 $e->set('client', $client);

@@ -47,7 +47,7 @@
 	</tr>
 </table>
 <p align="center">
-<a href="http://www.typicalgeek.com">powered by typical<b>Invoice</b></a>
+<a href="http://www.illanti.com">powered by typical<b>Invoice</b></a>
 </p>
 <!-- 
 Copyright Notice:
@@ -55,7 +55,7 @@ Copyright Notice:
 THIS COPYWRITE NOTICE AND THE TEXT ABOVE IT MUST APPEAR ON ALL PAGES
 
 This script was written by Jeremy Hubert, and is protected under copywrite laws. 
-Any improvements, please email typicalinvoice@typicalgeek.com. 
+Any improvements, please email support@illanti.com. 
 -->
 <p>&nbsp;</p>
 </body>

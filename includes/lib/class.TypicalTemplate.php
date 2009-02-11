@@ -5,9 +5,9 @@
 	product			: TypicalTemplate
 	version			: 1.0 build 1 (Beta)
 	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2004 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+	copyright		: Copyright &copy; 2001-2009 Jeremy Hubert
+	email			: support@illanti.com
+	website			: http://www.illanti.com
 
     A simple and efficient, yet powerful, templating class. 
     Also includes a caching function to reduce load on the server

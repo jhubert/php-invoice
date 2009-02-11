@@ -2,12 +2,12 @@
 /***************************************************************************
 					InvoiceSystemLib.php
 					------------
-	product			: TypicalInvoice Professional
+	product			: PHP Invoice
 	version			: 1.0 build 1 (Beta)
 	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2003 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+	copyright		: Copyright &copy; 2001-2009 Jeremy Hubert
+	email			: support@illanti.com
+	website			: http://www.illanti.com
 
     The core of the invoice system. 
     
@@ -16,7 +16,7 @@
 ***************************************************************************/
 /*
 # -------- IGNORE EVERYTHING BELOW THIS LINE --------
-$call_home_to="secure.typicalgeek.com";
+$call_home_to="secure.illanti.com";
 $installed_directory="/licence";
 $querystring="iaccess_ip=".base64_encode($_SERVER['SERVER_ADDR']);
 $querystring.="&iaccess_host=".base64_encode($_SERVER['SERVER_NAME']);

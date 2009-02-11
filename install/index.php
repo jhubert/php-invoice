@@ -1,16 +1,16 @@
 <?
 /***************************************************************************
-					install.php
-					------------
-	product			: TypicalInvoice
-	version			: 1.0 build 1 (Beta)
-	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2003 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+  install.php
+  ------------
+  product     : TypicalInvoice
+  version     : 1.0 build 1 (Beta)
+  released    : Sunday September 7 2003
+  copyright   : Copyright &copy; 2001-2009 Jeremy Hubert
+  email       : support@illanti.com
+  website     : http://www.illanti.com
 
-    Installs the application. DO NOT EDIT unless you know
-    what you are doing.
+  Installs the application. DO NOT EDIT unless you know
+  what you are doing.
 
 ***************************************************************************/
 
@@ -42,8 +42,8 @@ error_reporting(E_ALL);
 </table>
 <br>
 <table width="400" border="0" align="center" cellpadding="0" cellspacing="0">
-	<tr>
-		<td>
+  <tr>
+    <td>
         <table class="content" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border: 1px #000000 solid; border-right: 0px; border-bottom: 0px">
           <tr>
             <td style="background-color: #3C5D72; padding: 5px; color: #fff; font-weight: bold;"></td>
@@ -52,35 +52,33 @@ error_reporting(E_ALL);
             <td width="100%">
             <p>&nbsp;</p>
 <?
-
 switch($step) {
-    case 1:
-        displayStep1();
-        break;
-    case 2:
-        runChecks(2);
-        displayStep2();
-        break;
-    case 3:
-        runChecks(3);
-        setConfigValues(2);
-        if ($_REQUEST['installtype'] <> 'upgrade') {
-            addDBTables();
-        }
-        displayStep3();
-        break;
-    case 4:
-        setConfigValues(3);
-        displayStep4();
-        break;
-    case 5:
-        displayComplete();
-        break;
-    default:
-        echo "Invalid Step";
-        break;
+  case 1:
+    displayStep1();
+    break;
+  case 2:
+    runChecks(2);
+    displayStep2();
+    break;
+  case 3:
+    runChecks(3);
+    setConfigValues(2);
+    if ($_REQUEST['installtype'] <> 'upgrade') {
+        addDBTables();
+    }
+    displayStep3();
+    break;
+  case 4:
+    setConfigValues(3);
+    displayStep4();
+    break;
+  case 5:
+    displayComplete();
+    break;
+  default:
+    echo "Invalid Step";
+    break;
 }
-
 ?>
 <p>&nbsp;</p>
         </td>
@@ -93,11 +91,11 @@ switch($step) {
     </tr>
     </table>
 </td>
-	  <td width="6" valign="bottom" background="<?=SITE_ROOT?>images/shdw_right.jpg"><img src="<?=SITE_ROOT?>images/shdw_right_corner.jpg" width="6" height="8"></td>
-	</tr>
+    <td width="6" valign="bottom" background="<?=SITE_ROOT?>images/shdw_right.jpg"><img src="<?=SITE_ROOT?>images/shdw_right_corner.jpg" width="6" height="8"></td>
+  </tr>
 </table>
 <p align="center">
-<a href="http://www.typicalgeek.com">powered by typical<b>Invoice</b></a>
+<a href="http://www.illanti.com">powered by typical<b>Invoice</b></a>
 </p>
 <!-- 
 Copyright Notice:
@@ -105,7 +103,7 @@ Copyright Notice:
 THIS COPYWRITE NOTICE AND THE TEXT ABOVE IT MUST APPEAR ON ALL PAGES
 
 This script was written by Jeremy Hubert, and is protected under copywrite laws. 
-Any improvements, please email typicalinvoice@typicalgeek.com. 
+Any improvements, please email support@illanti.com. 
 -->
 <p>&nbsp;</p>
 </body>
@@ -157,7 +155,7 @@ function displayStep2() {
         <div>
         <form action="index.php" method="post">
         <div id="form">
-            <p class="title">Install</p>	
+            <p class="title">Install</p>  
             <p class="row">
                 <span class="leftvalue" title="Select the type of install you are doing.  If you are upgrading from an old copy of TI Pro, it will not add any information to the database automatically.  If you are doing a clean install, or upgrading from TI Basic, it will populate the database with fresh information.">Install Type: [?]</span>
                 <span class="rightvalue">
@@ -179,11 +177,11 @@ function displayStep2() {
             <p class="row">
                 <span class="leftvalue">Database User:</span>
                 <span class="rightvalue"><input type="text" name="db_user" value="" /></span>
-            </p>				
+            </p>        
             <p class="row">
                 <span class="leftvalue">Database Password:</span>
                 <span class="rightvalue"><input type="text" name="db_passwd" value="" /></span>
-            </p>		
+            </p>    
             <p class="row">
                 <span class="leftvalue" title="This is the prefix on the tables in the database.">Database Prefix: [?]</span>
                 <span class="rightvalue"><input type="text" name="db_prefix" value="ti_" /><br /></span>
@@ -192,7 +190,7 @@ function displayStep2() {
                 <span class="leftvalue" title="The starting number for your invoices.  They will increment from this number up.">First Invoice #: [?]</span>
                 <span class="rightvalue"><input type="text" name="inumstart" value="100" /><br /></span>
             </p>
-            <p class="title">Server Settings</p>	
+            <p class="title">Server Settings</p>  
             <p class="row">
                 <span class="leftvalue">HTTP Root:</span>
                 <span class="rightvalue"><input type="text" name="httproot" value="<?=getHTTPRoot()?>" size="40" /></span>
@@ -209,7 +207,7 @@ function displayStep2() {
                 <span class="leftvalue" title=This is the directory that e-mail copies are stored in. IT MUST BE WRITEABLE.(Relative to /)"">Email Directory: [?]</span>
                 <span class="rightvalue"><input type="text" name="dir_email" value="eml/" /><br /></span>
             </p>
-            <p class="title">Email Settings</p>	
+            <p class="title">Email Settings</p> 
             <p class="row">
                 <span class="leftvalue" title="This is the e-mail address that you want invoices sent from.">From Address:</span>
                 <span class="rightvalue"><input type="text" name="fromaddress" value="" size="40" /></span>
@@ -239,12 +237,12 @@ function displayStep3() {
         <form action="index.php" method="post">
         <div id="form">
             <input type="hidden" name="installtype" value="<?=$_POST['installtype']?>">
-            <p class="title">License Information</p>	
+            <p class="title">License Information</p>  
             <p class="row">
                 <span class="leftvalue">License Key:</span>
                 <span class="rightvalue"><textarea name="license"></textarea></span>
             </p>
-            <p class="title">Regional Settings</p>	
+            <p class="title">Regional Settings</p>  
             <p class="row">
                 <span class="leftvalue">Currency Symbol:</span>
                 <span class="rightvalue"><input type="text" name="currencysymbol" value="$" size="5" /></span>
@@ -281,7 +279,7 @@ function displayStep3() {
                 <span class="leftvalue">Date & Time Format:</span>
                 <span class="rightvalue"><input type="text" name="datetime" value="d/m/y h:i:s a" /></span>
             </p>
-            <p class="title">Display Settings</p>	
+            <p class="title">Display Settings</p> 
             <p class="row">
                 <span class="leftvalue">Default Template:</span>
                 <span class="rightvalue"><select name="deftemplate"><?=getTemplatesDD()?></select></span>
@@ -322,7 +320,7 @@ function displayStep4() {
 ?>
     <p>Thank you.  The upgrade is complete.</p><br />
     <p>Please use the <a href="<?=SITE_ROOT?>import.php">Import</a> area to import your data from the Basic Version.</p><br />
-    <p>If you haven't exported your data from the Basic version, please go to <a href="http://www.typicalgeek.com/help/tibasic/">TI Basic Support</a> for more information.</p><br />
+    <p>If you haven't exported your data from the Basic version, please go to <a href="http://www.illanti.com/help/tibasic/">TI Basic Support</a> for more information.</p><br />
     <p>Once logged in, setup your account information by clicking "Edit Account" and then setup your paygates in the "Edit Paygates" area.</p><br />
     <p>For added security, please delete the /install/ directory from the server.</p><br />
 <?  
@@ -404,9 +402,9 @@ function runChecks($step) {
             checkWritePermissions();
             break;
         case 3:
-			if (checkDirWritePermissions()) {
-				checkDBConnection();
-			} 
+      if (checkDirWritePermissions()) {
+        checkDBConnection();
+      } 
             break;
         case 4:
             displayStep4();
@@ -415,35 +413,35 @@ function runChecks($step) {
 }
 
 function checkDirWritePermissions() {
-	$pass = $fail = "";
-	$success = true;
-	if (is_writable(SITE_ROOT.$_REQUEST['dir_error'])) {
-		$pass .= 'Testing if error directory is writable... PASSED!';
-	} 
-	else {
-		$fail .= 'Testing if error directory is writable... FAILED!<br/>Please go back and make sure that the "'.$_REQUEST['dir_error'].'" directory is writable.';
-		$success = false;
-	}
+  $pass = $fail = "";
+  $success = true;
+  if (is_writable(SITE_ROOT.$_REQUEST['dir_error'])) {
+    $pass .= 'Testing if error directory is writable... PASSED!';
+  } 
+  else {
+    $fail .= 'Testing if error directory is writable... FAILED!<br/>Please go back and make sure that the "'.$_REQUEST['dir_error'].'" directory is writable.';
+    $success = false;
+  }
 
-	if (is_writable(SITE_ROOT.$_REQUEST['dir_email'])) {
-		$pass .= '<br />Testing if email directory is writable... PASSED!<br/>';
-	} 
-	else {
-		$fail .= '<br />Testing if email directory is writable... FAILED!<br/>Please make sure that the "'.$_REQUEST['dir_email'].'" directory is writable<br/>';
-		$success = false;
-	}
-	echo '<p class="check_pass">'.$pass.'</p>';
-	echo '<p class="check_fail">'.$fail.'</p>';
-	return $success;
+  if (is_writable(SITE_ROOT.$_REQUEST['dir_email'])) {
+    $pass .= '<br />Testing if email directory is writable... PASSED!<br/>';
+  } 
+  else {
+    $fail .= '<br />Testing if email directory is writable... FAILED!<br/>Please make sure that the "'.$_REQUEST['dir_email'].'" directory is writable<br/>';
+    $success = false;
+  }
+  echo '<p class="check_pass">'.$pass.'</p>';
+  echo '<p class="check_fail">'.$fail.'</p>';
+  return $success;
 }
 function checkWritePermissions() {
     global $configfile;
-	if (is_writable(SITE_ROOT.'includes/config.php')) {
-		echo '<p class="check_pass">Testing if config file is writable... PASSED!</p>';
-	} 
-	else {
-		echo '<p class="check_fail">Testing if config file is writable... FAILED!<br/>Please make sure that the config.php file in the ./includes/ directory is writeable</p>';
-	}
+  if (is_writable(SITE_ROOT.'includes/config.php')) {
+    echo '<p class="check_pass">Testing if config file is writable... PASSED!</p>';
+  } 
+  else {
+    echo '<p class="check_fail">Testing if config file is writable... FAILED!<br/>Please make sure that the config.php file in the ./includes/ directory is writeable</p>';
+  }
 }
 
 function checkPermissions($dir) {

@@ -1,42 +1,41 @@
 <?
 /***************************************************************************
-					login.php
-					------------
-	product			: TypicalInvoice Professional
-	version			: 1.0 build 1 (Beta)
-	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2003 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+  login.php
+  ------------
+  product     : PHP Invoice
+  version     : 1.0 build 1 (Beta)
+  released    : Sunday September 7 2003
+  copyright   : Copyright &copy; 2001-2009 Jeremy Hubert
+  email       : support@illanti.com
+  website     : http://www.illanti.com
 
-    Login page. DO NOT EDIT unless 
-    you know what you are doing.
+  Login page. DO NOT EDIT unless 
+  you know what you are doing.
 
 ***************************************************************************/
 
 define('SITE_ROOT','./');
 require_once(SITE_ROOT . 'includes/common.php');
 
-if (isset($_SESSION['ses_client_id'])) 
-{
-    header("Location: " . SITE_ROOT . $_SESSION['ses_access'] . "/index.php");
-    exit;
+if (isset($_SESSION['ses_client_id'])) {
+  header("Location: " . SITE_ROOT . $_SESSION['ses_access'] . "/index.php");
+  exit;
 }
 
 if (isset($_GET['r'])) {
-    switch($_GET['r']) {
-        case 1:
-            $message = 'I am silly';
-        break;
-        case 2:
-            $message = 'You don\'t have access';
-        break;
-        case 3:
-            $message = 'Invalid Username / Password';
-        break;
-        default:
-            $message = $_GET['r'];
-    }
+  switch($_GET['r']) {
+    case 1:
+      $message = 'I am silly'; // I don't know what this is all about
+    break;
+    case 2:
+      $message = 'You don\'t have access';
+    break;
+    case 3:
+      $message = 'Invalid Username / Password';
+    break;
+    default:
+      $message = $_GET['r'];
+  }
 }
 
 securePage('none');

@@ -2,12 +2,12 @@
 /***************************************************************************
 					common.php
 					------------
-	product			: TypicalInvoice Professional
+	product			: PHP Invoice
 	version			: 1.0 build 1 (Beta)
 	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2003 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+	copyright		: Copyright &copy; 2001-2009 Jeremy Hubert
+	email			: support@illanti.com
+	website			: http://www.illanti.com
 
     Contains all information that pertains to every loaded file. Includes, 
     page specs, error levels and the such. Also opens the db connection and

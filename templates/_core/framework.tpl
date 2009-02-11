@@ -64,15 +64,15 @@
   </tr>
 </table>
 <p align="center" class="copyright">
-powered by <a href="http://www.typicalgeek.com" style="font-weight:normal">typical<b>Invoice</b></a><br />
-template designed by <a href="http://www.typicalgeek.com" style="font-weight:normal">TypicalGeek</a> </p>
+powered by <a href="http://www.illanti.com" style="font-weight:normal">typical<b>Invoice</b></a><br />
+template designed by <a href="http://www.illanti.com" style="font-weight:normal">TypicalGeek</a> </p>
 <!-- 
 Copyright Notice:
 
 THIS COPYWRITE NOTICE AND THE TEXT ABOVE IT MUST APPEAR ON ALL PAGES
 
 This script was written by Jeremy Hubert, and is protected under copywrite laws. 
-Any improvements, please email typicalinvoice@typicalgeek.com. 
+Any improvements, please email support@illanti.com. 
 -->
 <p>&nbsp;</p>
 </body>

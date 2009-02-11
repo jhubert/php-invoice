@@ -2,12 +2,12 @@
 /***************************************************************************
 					index.php
 					------------
-	product			: TypicalInvoice Professional
+	product			: PHP Invoice
 	version			: 1.0 build 1 (Beta)
 	released		: Sunday September 7 2003
-	copyright		: Copyright © 2001-2003 Jeremy Hubert
-	email			: support@typicalgeek.com
-	website			: http://www.typicalgeek.com
+	copyright		: Copyright &copy; 2001-2009 Jeremy Hubert
+	email			: support@illanti.com
+	website			: http://www.illanti.com
 
     The starting point for the software. Login page. DO NOT EDIT unless 
     you know what you are doing.
